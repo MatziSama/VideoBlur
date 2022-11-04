@@ -84,9 +84,7 @@ async function changeVideo(action) {
     } else if (action === "prev") {
 
         let index = list.indexOf(actualVideo) - 1;
-        console.log(index);
         if (index < 0) index = list.length - 1;
-        console.log(list.length);
         return list[index];
 
     } else throw new Error("Unknow action")
